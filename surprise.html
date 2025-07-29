@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise!</title>
+  <link rel="stylesheet" href="surprise.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated-text">🎉 Happy Birthday, My Friend! 🎉</h1>
+
+    <div class="cake">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="candle"></div>
+    </div>
+  </div>
+
+  <audio id="bdayMusic" autoplay loop>
+    <source src="https://www2.cs.uic.edu/~i101/SoundFiles/BirthdaySong.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="confetti.js"></script>
+</body>
+</html>
