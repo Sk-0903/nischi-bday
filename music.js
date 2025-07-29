@@ -1,19 +1,19 @@
-// Create audio object and store in localStorage if not exists
 if (!localStorage.getItem("musicPlaying")) {
   const audio = new Audio("bg_music.mp3");
   audio.loop = true;
-  audio.volume = 100;
-  audio.play();
+  audio.volume = 0.5;
 
-  // Store reference in window so it doesn’t restart
+  audio.play().catch(e => {
+    console.log("Autoplay blocked. Will play on user interaction.");
+    document.addEventListener("click", () => audio.play(), { once: true });
+  });
+
   window.music = audio;
-
-  // Mark as playing
   localStorage.setItem("musicPlaying", "true");
 
-  // Save playing state on unload
+  // Clear flag when leaving or navigating to the final pages
   window.addEventListener("beforeunload", () => {
-    audio.pause();
     localStorage.removeItem("musicPlaying");
   });
 }
+
