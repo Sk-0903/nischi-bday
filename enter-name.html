@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Your Name</title>
+  <link rel="stylesheet" href="enter-style.css">
+</head>
+<body>
+  <div class="centered">
+    <h2>Hey Birthday Girl 🎂</h2>
+    <p>Type your name to receive your special wish!</p>
+    <input type="text" id="nameInput" placeholder="Enter your name..." />
+    <button onclick="checkName()">Submit</button>
+  </div>
+
+  <script>
+    function checkName() {
+      const name = document.getElementById("nameInput").value.trim().toLowerCase();
+      if (name === "keshav") {
+        window.location.href = "keshav.html";
+      } else if (name === "lekha") {
+        window.location.href = "lekha.html";
+      } else {
+        alert("Oops! No surprise prepared for this name 😅");
+      }
+    }
+  </script>
+</body>
+</html>
