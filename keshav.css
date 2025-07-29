@@ -30,3 +30,10 @@ audio {
   0% { transform: scale(1); }
   100% { transform: scale(1.05); }
 }
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
