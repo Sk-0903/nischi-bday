@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(to right, #ffe6f0, #fcd5ce);
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding: 50px;
+}
+
+.message {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ffb6c1;
+}
+
+audio {
+  margin: 20px 0;
+}
+
+.keshav-animation img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #f08080;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
