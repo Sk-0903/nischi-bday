@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(to top left, #e0bbf4, #f8d3e3);
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding: 50px;
+}
+
+.message {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #da70d6;
+}
+
+audio {
+  margin: 20px 0;
+}
+
+.lekha-animation img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ee82ee;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
