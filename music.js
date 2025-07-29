@@ -2,7 +2,7 @@
 if (!localStorage.getItem("musicPlaying")) {
   const audio = new Audio("bg_music.mp3");
   audio.loop = true;
-  audio.volume = 0.5;
+  audio.volume = 2.0;
   audio.play();
 
   // Store reference in window so it doesn’t restart
