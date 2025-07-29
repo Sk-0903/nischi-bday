@@ -19,13 +19,6 @@ audio {
   margin: 20px 0;
 }
 
-.lekha-animation img {
-  width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #ee82ee;
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.08); }
