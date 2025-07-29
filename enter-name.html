@@ -14,17 +14,22 @@
   </div>
 
   <script>
-    function checkName() {
-      const name = document.getElementById("nameInput").value.trim().toLowerCase();
-      if (name === "keshav") {
-        window.location.href = "keshav.html";
-      } else if (name === "lekha") {
-        window.location.href = "lekha.html";
-      } else {
-        alert("Oops! No surprise prepared for this name 😅");
-      }
-    }
-  </script>
-  <script src="music.js"></script>
+   function checkName() 
+   {
+  const name = document.getElementById("nameInput").value.trim().toLowerCase();
+  
+  // Stop background music
+  localStorage.removeItem("musicPlaying");
+
+  if (name === "keshav") {
+    window.location.href = "keshav.html";
+  } else if (name === "lekha") {
+    window.location.href = "lekha.html";
+  } else {
+    alert("Oops! No surprise prepared for this name 😅");
+  }
+}
+</script>
+<script src="music.js"></script>
 </body>
 </html>
