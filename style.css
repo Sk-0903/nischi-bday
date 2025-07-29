@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to top right, #ff99cc, #ffccff);
+  overflow: hidden;
+}
+
+.decorations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://i.imgur.com/Vf1XLmM.png'); /* confetti image */
+  background-size: cover;
+  background-repeat: repeat;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
+  margin-bottom: 40px;
+}
+
+.surprise-btn {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background: #ff69b4;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff69b4;
+  transition: 0.3s ease-in-out;
+}
+
+.surprise-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #ff69b4;
+}
