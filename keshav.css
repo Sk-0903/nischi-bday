@@ -1,9 +1,12 @@
 body {
-  background: linear-gradient(to right, #ffe6f0, #fcd5ce);
+  background: url('kesh.jpg') no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Comic Sans MS', cursive;
   text-align: center;
   padding: 50px;
+  color: white;
 }
+
 
 .message {
   background: #fff;
