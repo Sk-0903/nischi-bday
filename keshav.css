@@ -1,10 +1,12 @@
 body {
   background-image: url("kesh.jpg");
-  background-size: contain;      
+  background-size: 100% 100%;   /* stretches to full width & height */
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;       
+  margin: 0;
+  height: 100vh;
 }
+
 }
 
 
